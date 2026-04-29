@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-@theme{
-    --color-pri-col: #202938;
-    --color-white-shade: #f6f6f6;
-    --color-pri-col
+@theme {
+    --color-pri-col:blue;
     --animate-turn: rotate 3s ease-in-out 2s infinite;
+    --breakpoint-3x1: 104rem;
 }
 
 @keyframes rotate{
@@ -15,4 +14,12 @@
         transform: rotate(360deg);
     }
 }
+/* for one-off animation use this
 
+.do-animate{
+    animation: rotate 3s ease-in-out 2s infinite;
+}
+    */
+
+.card{
+    @apply m-4 bg-green-500 py-10 px-5 flex flex-col gap-4 border border-black/15 rounded-3xl shadow-2xl hover:scale-125 hover:bg-red-600 transition-all duration-500 translate-y-3} 
