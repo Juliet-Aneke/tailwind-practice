@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-    --color-pri-col:blue;
+    --color-pri-col:#1842a4;
+    --color-gold:#efce6c;
+    --color-dark blue:#101d27;
+    --color-white shade:#5d5682;
+}
+
+
+    /* for index.html
     --animate-turn: rotate 3s ease-in-out 2s infinite;
     --breakpoint-3x1: 104rem;
 }
@@ -14,12 +21,24 @@
         transform: rotate(360deg);
     }
 }
-/* for one-off animation use this
+
 
 .do-animate{
     animation: rotate 3s ease-in-out 2s infinite;
 }
-    */
+    
+
 
 .card{
-    @apply m-4 bg-green-500 py-10 px-5 flex flex-col gap-4 border border-black/15 rounded-3xl shadow-2xl hover:scale-125 hover:bg-red-600 transition-all duration-500 translate-y-3} 
+    @apply py-10 px-5 flex flex-col gap-4 bg-green-400 border border-black/90 rounded-3xl shadow-2xl 
+}
+
+*/
+
+.navlink-active {
+    @apply text-pri-col
+}
+
+.container{
+    @apply w-9/10 mx-auto 2xl:w-3/5
+}
